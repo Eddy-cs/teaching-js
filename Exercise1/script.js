@@ -19,6 +19,20 @@ let images = [
 // acceder a data dentro de arrays y objetos
 // Ejemplo: images[0].description nos devuelve "NoPE"
 
+// -----Parte 1
+
+// - Acceder a el texto de los <h1> con DOM methods
+// - Tomar ese texto del elemento <h1> y usar javascript methods
+// para remover el character "*" que se encuentra dañando los titulos (M*r.R*obo*t y Cu*t*e*)
+// - Una vez que tengan una variable con el texto arreglado (M*r.R*obo*t --> Mr.Robot)
+// anadir ese nuevo texto arreglado como el nuevo texto del <h1>
+
+// Su codigo aqui
+
+//
+
+// -----Parte 2
+
 // - Crear un loop que itere (valla atravez de) el array images
 // - Usar un if statement que coloque los links de las imagenes
 // en el array correspondiente (ya creado "elliotArray o cuteArray")
