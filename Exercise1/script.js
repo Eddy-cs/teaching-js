@@ -1,19 +1,3 @@
-let images = [
-  { description: "NoPE", link: "./images/img4.jpg" },
-  { description: "Elliot", link: "./images/img0.jpg" },
-  { description: "Cute", link: "./images/img1.jpg" },
-  { description: "NOPE", link: "./images/img4.jpg" },
-  { description: "NOPE", link: "./images/img4.jpg" },
-  { description: "Elliot", link: "./images/img2.jpg" },
-  { description: "Cute", link: "./images/img3.jpg" },
-  { description: "NOPE", link: "./images/img4.jpg" },
-  { description: "Elliot", link: "./images/img5.jpg" },
-  { description: "Cute", link: "./images/img6.jpg" },
-  { description: "Elliot", link: "./images/img7.jpg" },
-  { description: "Cute", link: "./images/img8.jpg" },
-  { description: "Nope", link: "./images/img4.jpg" },
-]; 
-
 // NOTA: Para acceder a las propiedades dentro del array
 // tienen que usar un mix de lo que vimos acerca de
 // acceder a data dentro de arrays y objetos
@@ -27,7 +11,9 @@ let images = [
 // - Una vez que tengan una variable con el texto arreglado (M*r.R*obo*t --> Mr.Robot)
 // anadir ese nuevo texto arreglado como el nuevo texto del <h1>
 
-console.log("%c Byron ", "background: #222; color: #bada55");
+// Su codigo aqui
+
+// console.log("%c Byron ", "background: #222; color: #bada55");
 
 // let correccion = document.querySelector(".robot").textContent;
 // console.log(correccion);
@@ -43,15 +29,13 @@ console.log("%c Byron ", "background: #222; color: #bada55");
 // let undiv2 = document.getElementsByTagName("h1")[1].textContent;
 // console.log(undiv2);
 
-console.log("%c Leslie ", "background: #222; color: #bada55");
+// console.log("%c Leslie ", "background: #222; color: #bada55");
 
 let undiv = document.getElementsByClassName("robot")[0].textContent;
 console.log(undiv);
 
 let arrayDeStrings = undiv.split("*");
-console.log(arrayDeStrings);
 let resultadoFinal = arrayDeStrings.join("");
-console.log(resultadoFinal);
 
 document.getElementsByClassName("robot")[0].textContent = resultadoFinal;
 
@@ -62,8 +46,6 @@ document.getElementsByTagName("h1")[1].textContent = document
   .getElementsByTagName("h1")[1]
   .textContent.split("*")
   .join("");
-
-// Su codigo aqui
 
 //
 
@@ -80,6 +62,32 @@ let elliotArray = [];
 let cuteArray = [];
 
 // Su codigo aqui
+
+// console.log("%c Leslie ", "background: #222; color: #bada55");
+
+let images = [
+  { description: "NoPE", link: "./images/img4.jpg" },
+  { description: "Elliot", link: "./images/img0.jpg" },
+  { description: "Cute", link: "./images/img1.jpg" },
+  { description: "NOPE", link: "./images/img4.jpg" },
+  { description: "NOPE", link: "./images/img4.jpg" },
+  { description: "Elliot", link: "./images/img2.jpg" },
+  { description: "Cute", link: "./images/img3.jpg" },
+  { description: "NOPE", link: "./images/img4.jpg" },
+  { description: "Elliot", link: "./images/img5.jpg" },
+  { description: "Cute", link: "./images/img6.jpg" },
+  { description: "Elliot", link: "./images/img7.jpg" },
+  { description: "Cute", link: "./images/img8.jpg" },
+  { description: "Nope", link: "./images/img4.jpg" },
+];
+
+//Seleccionar el primer objeto
+
+//Leer la propiedad description de ese objeto
+//Revisar si description es "Elliot" o "Cute"
+//Poner ese objeto en el array correspondiente
+
+// console.log("%c Byron ", "background: #222; color: #bada55");
 
 //
 

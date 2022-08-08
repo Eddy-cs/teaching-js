@@ -55,7 +55,7 @@ let nuevaFuncion = div.sayHola();
 
 //  --------  Acceder a un valor dentro de un Array
 
-// let ejemplo2 = [654, "hola", false, [654, "hola2", false]];
+let ejemplo2 = [654, "hola", false, [654, "hola2", false]];
 // console.log(ejemplo2[3][0]);
 
 // --------  Modificacion del html
