@@ -60,10 +60,10 @@ let nuevaFuncion = div.sayHola();
 
 // --------  Modificacion del html
 
-// let undiv = document.querySelector(".ejemplo");
-// console.log(undiv);
-// undiv.innerText = "Adiooos";
-// undiv.style.height = "300px";
+let undiv = document.querySelector(".ejemplo");
+console.log(undiv);
+undiv.innerText = "Adiooos";
+undiv.style.height = "300px";
 
 // --------  Functions
 

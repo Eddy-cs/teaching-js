@@ -12,7 +12,7 @@ let images = [
   { description: "Elliot", link: "./images/img7.jpg" },
   { description: "Cute", link: "./images/img8.jpg" },
   { description: "Nope", link: "./images/img4.jpg" },
-];
+]; 
 
 // NOTA: Para acceder a las propiedades dentro del array
 // tienen que usar un mix de lo que vimos acerca de
@@ -26,6 +26,42 @@ let images = [
 // para remover el character "*" que se encuentra dañando los titulos (M*r.R*obo*t y Cu*t*e*)
 // - Una vez que tengan una variable con el texto arreglado (M*r.R*obo*t --> Mr.Robot)
 // anadir ese nuevo texto arreglado como el nuevo texto del <h1>
+
+console.log("%c Byron ", "background: #222; color: #bada55");
+
+// let correccion = document.querySelector(".robot").textContent;
+// console.log(correccion);
+
+// var extraer = correccion.substr(0, 1);
+// var extraer2 = correccion.substr(2, 1);
+// var extraer3 = correccion.substr(3, 1);
+
+// let resultado = extraer + extraer2 + extraer3;
+
+// console.log(resultado);
+
+// let undiv2 = document.getElementsByTagName("h1")[1].textContent;
+// console.log(undiv2);
+
+console.log("%c Leslie ", "background: #222; color: #bada55");
+
+let undiv = document.getElementsByClassName("robot")[0].textContent;
+console.log(undiv);
+
+let arrayDeStrings = undiv.split("*");
+console.log(arrayDeStrings);
+let resultadoFinal = arrayDeStrings.join("");
+console.log(resultadoFinal);
+
+document.getElementsByClassName("robot")[0].textContent = resultadoFinal;
+
+// let palabra = document.querySelector("h1").textContent;
+// console.log(palabra);
+
+document.getElementsByTagName("h1")[1].textContent = document
+  .getElementsByTagName("h1")[1]
+  .textContent.split("*")
+  .join("");
 
 // Su codigo aqui
 
