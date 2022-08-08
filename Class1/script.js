@@ -26,23 +26,23 @@ variable = "Nuevo texto";
 
 // -- Array
 
-let coleccion = [654, "hola", false, [654, "hola2", false]];
+// let coleccion = [654, "hola", false, [654, "hola2", false]];
 
 // -- Object
 
-let div = {
-  height: "5465px",
-  innerHTML: "ejemplo",
-  botton: "ejemplo2",
-  sayHola: function () {
-    return "hola";
-  },
-  sayAdios: function adios() {
-    return "Adios";
-  },
-};
+// let div = {
+//   height: "5465px",
+//   innerHTML: "ejemplo",
+//   botton: "ejemplo2",
+//   sayHola: function () {
+//     return "hola";
+//   },
+//   sayAdios: function adios() {
+//     return "Adios";
+//   },
+// };
 
-let nuevaFuncion = div.sayHola();
+// let nuevaFuncion = div.sayHola();
 
 // console.log(nuevaFuncion);
 // console.log(nuevaFuncion());
@@ -55,15 +55,15 @@ let nuevaFuncion = div.sayHola();
 
 //  --------  Acceder a un valor dentro de un Array
 
-let ejemplo2 = [654, "hola", false, [654, "hola2", false]];
+// let ejemplo2 = [654, "hola", false, [654, "hola2", false]];
 // console.log(ejemplo2[3][0]);
 
 // --------  Modificacion del html
 
-let undiv = document.querySelector(".ejemplo");
-console.log(undiv);
-undiv.innerText = "Adiooos";
-undiv.style.height = "300px";
+// let undiv = document.querySelector(".ejemplo");
+// console.log(undiv);
+// undiv.innerText = "Adiooos";
+// undiv.style.height = "300px";
 
 // --------  Functions
 
@@ -114,16 +114,19 @@ undiv.style.height = "300px";
 // console.log(["a", "c"].join("xxxx"));
 
 //---- Conditional statements
+let texto = "hola";
 
-// function holaOAddios(saludo) {
-//   if (saludo === "Hola") {
-//     return "Es un Hola";
-//   } else if (saludo === "Adios") {
-//     return "Es un Adios";
-//   } else {
-//     return "Ni hola ni Adios";
-//   }
-// }
+function holaOAddios(saludo) {
+  if (saludo === "Hola") {
+    return "Es un Hola";
+  } else if (saludo === "Adios") {
+    return "Es un Adios";
+  } else {
+    return "Ni hola ni Adios";
+  }
+}
+
+console.log(holaOAddios(texto));
 
 //----- Truthy/Falsey
 

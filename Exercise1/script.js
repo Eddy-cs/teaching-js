@@ -32,7 +32,7 @@
 // console.log("%c Leslie ", "background: #222; color: #bada55");
 
 let undiv = document.getElementsByClassName("robot")[0].textContent;
-console.log(undiv);
+// console.log(undiv);
 
 let arrayDeStrings = undiv.split("*");
 let resultadoFinal = arrayDeStrings.join("");
@@ -48,7 +48,6 @@ document.getElementsByTagName("h1")[1].textContent = document
   .join("");
 
 //
-
 // -----Parte 2
 
 // - Crear un loop que itere (valla atravez de) el array images
@@ -62,8 +61,6 @@ let elliotArray = [];
 let cuteArray = [];
 
 // Su codigo aqui
-
-// console.log("%c Leslie ", "background: #222; color: #bada55");
 
 let images = [
   { description: "NoPE", link: "./images/img4.jpg" },
@@ -81,16 +78,44 @@ let images = [
   { description: "Nope", link: "./images/img4.jpg" },
 ];
 
-//Seleccionar el primer objeto
-("Hola");
-("NOPE");
+console.log(images[5]);
+console.log(images[5].description);
 
-//Leer la propiedad description de ese objeto
-//Revisar si description es "Elliot" o "Cute"
-//Poner ese objeto en el array correspondiente
+function saludo() {
+  return "hola";
+}
+console.log(saludo());
 
-// console.log("%c Byron ", "background: #222; color: #bada55");
+let decirBye = "Bye";
+function checkElliotOrCute(parametro) {
+  return parametro;
+}
 
+function prueba(termino) {
+  for (let i = 0; i < termino.length; i++) {
+    if (termino[i].description === "Elliot") {
+      elliotArray.push(termino[i]);
+    } else if (termino[i].description === "Cute") {
+      cuteArray.push(termino[i]);
+    } else {
+      console.log("imagen no deseada");
+    }
+  }
+}
+
+prueba(images);
+
+//1.Seleccionar el primer objeto
+//--Mostrar array de objetos en consola
+//--Selecionar el quinto objeto
+//2.Mostrar la propiedad description de ese objeto en la consola
+
+//3.Revisar si description es "Elliot" o "Cute"
+//--Crear function devuelva "Hola" en la consola
+//--Crear una variable que tenga el string "Bye"
+//--Anadir un parametro a la funcion y return ese mismo parametro
+//--Crear un if statement que revise si ese parametro es "Elliot" o "Cute"
+//4.Poner ese objeto en el array correspondiente
 //
 
 ///////////////////Setup - No Tocar/////////////////////////////////
@@ -101,12 +126,12 @@ const boxBottom = document.getElementById("bottom");
 
 for (let i = 0; i < elliotArray.length; i++) {
   const image = document.createElement("img");
-  image.src = elliotArray[i];
+  image.src = elliotArray[i].link;
   boxTop.appendChild(image);
 }
 
 for (let i = 0; i < cuteArray.length; i++) {
   const image = document.createElement("img");
-  image.src = cuteArray[i];
+  image.src = cuteArray[i].link;
   boxBottom.appendChild(image);
 }
