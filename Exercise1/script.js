@@ -82,6 +82,7 @@ let images = [
 ];
 
 //Seleccionar el primer objeto
+("Hola");
 
 //Leer la propiedad description de ese objeto
 //Revisar si description es "Elliot" o "Cute"
