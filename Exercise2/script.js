@@ -15,7 +15,7 @@ let images = [
 let elliotArray = [];
 let cuteArray = [];
 
-// -Nuestra imagenes ahora contienen la propiedad like
+// -Nuestras imagenes ahora contienen la propiedad like
 // y esta vez queremos mostrar en el html solamente aquellas
 // que tienen mas de 5 likes
 
