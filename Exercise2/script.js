@@ -68,6 +68,6 @@ for (let i = 0; i < cuteArray.length; i++) {
 /////////// Tu codigo aqui
 
 // Este codigo crea los <img> elements
-// para el div con id "botttom" (imagenes Nope)
+// para el div con id "botttom" (imagenes Otras)
 
 ////////////////////////////////
