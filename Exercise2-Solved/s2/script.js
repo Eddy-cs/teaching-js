@@ -14,8 +14,9 @@ let images = [
 
 let elliotArray = [];
 let cuteArray = [];
+let otherArray = [];
 
-// -Nuestras imagenes ahora contienen la propiedad like
+// -Nuestras ImagenFinal ahora contienen la propiedad like
 // y esta vez queremos mostrar en el html solamente aquellas
 // que tienen mas de 5 likes
 
@@ -23,7 +24,7 @@ let cuteArray = [];
 
 // - Usando un conditional statement (un if statement) colocar
 // respectivamente en el array ya creado (elliotArrat o cuteArray)
-// solamente las imagenes que correspondan en su descripcion y ademas
+// solamente las ImagenFinal que correspondan en su descripcion y ademas
 // tengan una cantidad de "likes" mayor a 5
 
 // Nota: Googlear y y usar el operador && para comparar 2 cosas la mismo tiempo
@@ -31,21 +32,69 @@ let cuteArray = [];
 
 /////////// Tu codigo aqui
 
+// 1. Obtener texto Mr.Robot (innecesario)
+
+let mostrarElliot = document.querySelector(".robot").textContent.split(" ")[1];
+console.log(mostrarElliot);
+
+// 2. Obtener description y cantidad de likes
+
+let descripcionDeImagen = images[0].description;
+console.log(descripcionDeImagen);
+
+let cantidadDeLikes = images[0].likes;
+console.log(cantidadDeLikes);
+
+// 4. contar likes
+
+function conteoLikes(numeroDeLikes) {
+  if (numeroDeLikes > 5) {
+    return "si";
+  } else {
+    return "no";
+  }
+}
+
+console.log(conteoLikes(cantidadDeLikes));
+
+// 5. Mostrar Imagenes en pagina
+
+// elliotArray.push(images[0]);
+
+// 4. Crear Conditional Statement
+
+function resultado(condiciones) {
+  for (let i = 0; i < condiciones.length; i++) {
+    if (condiciones[i].description === "Elliot" && condiciones[i].likes > 5) {
+      elliotArray.push(images[i]);
+    } else if (
+      condiciones[i].description === "Cute" &&
+      condiciones[i].likes > 5
+    ) {
+      cuteArray.push(images[i]);
+    } else {
+      otherArray.push(images[i]);
+    }
+  }
+}
+
+resultado(images);
+
 ////////////////////////////////
 
 // ----- PARTE 2
 
 // - Analizar y comprender en el codigo que crea los <img> elements
-// para las imagenes Mr.robot y Cute que se muestran con el html (codigo de abajo)
-// - Crear un nuevo array para poner las imagenes que no pertenecen a
+// para las ImagenFinal Mr.robot y Cute que se muestran con el html (codigo de abajo)
+// - Crear un nuevo array para poner las ImagenFinal que no pertenecen a
 // ninguna categoria (como eliotArray y cuteArray)
 // - Crear un loop que realize la misma logica que las
-// otras categorias para añadir estas otras imagenes
+// otras categorias para añadir estas otras ImagenFinal
 // - Añadir logica al if statement creado anteriormente para que incluya
-// las imagenes que no son ni Cute ni Elliot a nuevo array creado
+// las ImagenFinal que no son ni Cute ni Elliot a nuevo array creado
 
 // Este codigo crea los <img> elements
-// para el div con id "top" (imagenes Favorite MR.robot)
+// para el div con id "top"  ImagenFinal Favorite MR.robot)
 
 const boxTop = document.getElementById("top");
 
@@ -56,7 +105,7 @@ for (let i = 0; i < elliotArray.length; i++) {
 }
 
 // Este codigo crea los <img> elements
-// para el div con id "middle" (imagenes Favorite Cute)
+// para el div con id "middle"  ImagenFinal Favorite Cute)
 
 const boxMiddle = document.getElementById("middle");
 for (let i = 0; i < cuteArray.length; i++) {
@@ -68,6 +117,12 @@ for (let i = 0; i < cuteArray.length; i++) {
 /////////// Tu codigo aqui
 
 // Este codigo crea los <img> elements
-// para el div con id "botttom" (imagenes Otras)
+// para el div con id "botttom"  ImagenFinal Otras)
 
+const boxBottom = document.getElementById("bottom");
+for (let i = 0; i < otherArray.length; i++) {
+  const image = document.createElement("img");
+  image.src = otherArray[i].link;
+  boxBottom.appendChild(image);
+}
 ////////////////////////////////

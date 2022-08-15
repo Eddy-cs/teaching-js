@@ -60,9 +60,9 @@ variable = "Nuevo texto";
 
 // --------  Modificacion del html
 
-// let undiv = document.querySelector(".ejemplo");
-// console.log(undiv);
-// undiv.innerText = "Adiooos";
+let undiv = document.querySelector(".ejemplo");
+console.log(undiv);
+undiv.innerText = "Adiooos";
 // undiv.style.height = "300px";
 
 // --------  Functions
@@ -141,7 +141,7 @@ console.log(holaOAddios(texto));
 // }
 
 // console.log(holaOAddios(10));
-
+//Hola
 //------ Loop Statements
 
 function numeroDeUsuarios() {

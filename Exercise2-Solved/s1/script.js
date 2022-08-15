@@ -14,6 +14,7 @@ let images = [
 
 let elliotArray = [];
 let cuteArray = [];
+let nuevoArray = [];
 
 // -Nuestras imagenes ahora contienen la propiedad like
 // y esta vez queremos mostrar en el html solamente aquellas
@@ -30,6 +31,19 @@ let cuteArray = [];
 // dentro del if statement
 
 /////////// Tu codigo aqui
+
+function prueba(ejercicio) {
+  for (let i = 0; i < ejercicio.length; i++) {
+    if (ejercicio[i].description === "Elliot" && ejercicio[i].likes > 5) {
+      elliotArray.push(ejercicio[i]);
+    } else if (ejercicio[i].description === "Cute" && ejercicio[i].likes > 5) {
+      cuteArray.push(ejercicio[i]);
+    } else {
+      nuevoArray.push(ejercicio[i]);
+    }
+  }
+}
+prueba(images);
 
 ////////////////////////////////
 
@@ -69,5 +83,12 @@ for (let i = 0; i < cuteArray.length; i++) {
 
 // Este codigo crea los <img> elements
 // para el div con id "botttom" (imagenes Otras)
+
+const boxBottom = document.getElementById("bottom");
+for (let i = 0; i < nuevoArray.length; i++) {
+  const image = document.createElement("img");
+  image.src = nuevoArray[i].link;
+  boxBottom.appendChild(image);
+}
 
 ////////////////////////////////
