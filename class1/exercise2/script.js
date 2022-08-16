@@ -1,20 +1,19 @@
 let images = [
-  { description: "Elliot", likes: 10, link: "./images/img0.jpg" },
-  { description: "4544ASD", likes: 11, link: "./images/img4.jpg" },
-  { description: "Cute", likes: 7, link: "./images/img1.jpg" },
-  { description: "Elliot", likes: 21, link: "./images/img2.jpg" },
-  { description: "Cute", likes: 9, link: "./images/img3.jpg" },
-  { description: "678xxx", likes: 46, link: "./images/img4.jpg" },
-  { description: "Elliot", likes: 3, link: "./images/img5.jpg" },
-  { description: "Cute", likes: 24, link: "./images/img6.jpg" },
-  { description: "Elliot", likes: 11, link: "./images/img7.jpg" },
-  { description: "Cute", likes: 3, link: "./images/img8.jpg" },
-  { description: "Nope", likes: 15, link: "./images/img4.jpg" },
+  { description: "Elliot", likes: 10, link: "../resources/img0.jpg" },
+  { description: "4544ASD", likes: 11, link: "../resources/img4.jpg" },
+  { description: "Cute", likes: 7, link: "../resources/img1.jpg" },
+  { description: "Elliot", likes: 21, link: "../resources/img2.jpg" },
+  { description: "Cute", likes: 9, link: "../resources/img3.jpg" },
+  { description: "678xxx", likes: 46, link: "../resources/img4.jpg" },
+  { description: "Elliot", likes: 3, link: "../resources/img5.jpg" },
+  { description: "Cute", likes: 24, link: "../resources/img6.jpg" },
+  { description: "Elliot", likes: 11, link: "../resources/img7.jpg" },
+  { description: "Cute", likes: 3, link: "../resources/img8.jpg" },
+  { description: "Nope", likes: 15, link: "../resources/img4.jpg" },
 ];
 
 let elliotArray = [];
 let cuteArray = [];
-let nuevoArray = [];
 
 // -Nuestras imagenes ahora contienen la propiedad like
 // y esta vez queremos mostrar en el html solamente aquellas
@@ -31,19 +30,6 @@ let nuevoArray = [];
 // dentro del if statement
 
 /////////// Tu codigo aqui
-
-function prueba(ejercicio) {
-  for (let i = 0; i < ejercicio.length; i++) {
-    if (ejercicio[i].description === "Elliot" && ejercicio[i].likes > 5) {
-      elliotArray.push(ejercicio[i]);
-    } else if (ejercicio[i].description === "Cute" && ejercicio[i].likes > 5) {
-      cuteArray.push(ejercicio[i]);
-    } else {
-      nuevoArray.push(ejercicio[i]);
-    }
-  }
-}
-prueba(images);
 
 ////////////////////////////////
 
@@ -83,12 +69,5 @@ for (let i = 0; i < cuteArray.length; i++) {
 
 // Este codigo crea los <img> elements
 // para el div con id "botttom" (imagenes Otras)
-
-const boxBottom = document.getElementById("bottom");
-for (let i = 0; i < nuevoArray.length; i++) {
-  const image = document.createElement("img");
-  image.src = nuevoArray[i].link;
-  boxBottom.appendChild(image);
-}
 
 ////////////////////////////////

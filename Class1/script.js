@@ -1,6 +1,6 @@
-// --------  DOM object model
+// --------  DOM
 
-let domcume = {
+let doc = {
   html: {
     head: { meta: "src" },
     body: {
@@ -10,19 +10,15 @@ let domcume = {
   },
 };
 
-// --------  Objeto consola
+// --------  Objeto console
 
 // console.log("Hola");
 
 // --------  Data types
 
-let variable = "texto";
+let string = "texto";
 let number = 45 + 54;
 let boolean = false;
-
-variable = "Nuevo texto";
-
-// const
 
 // -- Array
 
@@ -42,8 +38,9 @@ variable = "Nuevo texto";
 //   },
 // };
 
-// let nuevaFuncion = div.sayHola();
+//  --------  Ejecutar una funcion dentro de un objeto
 
+// let nuevaFuncion = div.sayHola();
 // console.log(nuevaFuncion);
 // console.log(nuevaFuncion());
 
@@ -60,9 +57,9 @@ variable = "Nuevo texto";
 
 // --------  Modificacion del html
 
-let undiv = document.querySelector(".ejemplo");
-console.log(undiv);
-undiv.innerText = "Adiooos";
+// let undiv = document.querySelector(".ejemplo");
+// console.log(undiv);
+// undiv.innerText = "Adiooos";
 // undiv.style.height = "300px";
 
 // --------  Functions
@@ -93,7 +90,7 @@ undiv.innerText = "Adiooos";
 // console.log(obtenerInfoUsuario(547, "Profesor"));
 // console.log(obtenerInfoUsuario(548, "Enfermera"));
 
-// -- Ejemplo de inheritance
+// --------  Inheritance
 
 // ejemplo = {
 //   variable: "texto1,texto2,texto3",
@@ -113,7 +110,7 @@ undiv.innerText = "Adiooos";
 // console.log(ejemplo4.join("xxxx"));
 // console.log(["a", "c"].join("xxxx"));
 
-//---- Conditional statements
+// --------  Conditional statements
 let texto = "hola";
 
 function holaOAddios(saludo) {
@@ -141,8 +138,8 @@ console.log(holaOAddios(texto));
 // }
 
 // console.log(holaOAddios(10));
-//Hola
-//------ Loop Statements
+
+//------ Loop Statement
 
 function numeroDeUsuarios() {
   let usuarios = ["byron", "leslie", "eddy"];
