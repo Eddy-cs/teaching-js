@@ -1,2 +1,3 @@
 # Teaching-JS
- JavaScript exercises/materials for teaching
+
+Personal JavaScript exercises/materials for teaching

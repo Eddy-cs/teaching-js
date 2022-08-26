@@ -71,3 +71,5 @@ for (let i = 0; i < cuteArray.length; i++) {
 // para el div con id "botttom" (imagenes Otras)
 
 ////////////////////////////////
+
+

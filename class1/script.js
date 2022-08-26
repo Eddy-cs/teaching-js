@@ -1,24 +1,24 @@
-// --------  DOM
+//////////  DOM
 
-let doc = {
-  html: {
-    head: { meta: "src" },
-    body: {
-      div: { class: "titulo", content: "Hola" },
-      h1: { class: "ejemplo", content: "Algo de contenido" },
-    },
-  },
-};
+// let doc = {
+//   html: {
+//     head: { meta: "src" },
+//     body: {
+//       div: { class: "titulo", content: "Hola" },
+//       h1: { class: "ejemplo", content: "Algo de contenido" },
+//     },
+//   },
+// };
 
-// --------  Objeto console
+//////////  Objeto console
 
 // console.log("Hola");
 
-// --------  Data types
+//////////  Data types
 
-let string = "texto";
-let number = 45 + 54;
-let boolean = false;
+// let string = "texto";
+// let number = 45 + 54;
+// let boolean = false;
 
 // -- Array
 
@@ -38,31 +38,31 @@ let boolean = false;
 //   },
 // };
 
-//  --------  Ejecutar una funcion dentro de un objeto
+///////////  Ejecutar una funcion dentro de un objeto
 
 // let nuevaFuncion = div.sayHola();
 // console.log(nuevaFuncion);
 // console.log(nuevaFuncion());
 
-//  --------  Ejecutar una funcion dentro de un objeto
+///////////  Ejecutar una funcion dentro de un objeto
 
 // console.log(div.sayHola());
 // console.log(div.sayHola());
 // console.log(div.sayAdios());
 
-//  --------  Acceder a un valor dentro de un Array
+///////////  Acceder a un valor dentro de un Array
 
 // let ejemplo2 = [654, "hola", false, [654, "hola2", false]];
 // console.log(ejemplo2[3][0]);
 
-// --------  Modificacion del html
+//////////  Modificacion del html
 
 // let undiv = document.querySelector(".ejemplo");
 // console.log(undiv);
 // undiv.innerText = "Adiooos";
 // undiv.style.height = "300px";
 
-// --------  Functions
+//////////  Functions
 
 // function mostrarEnConsola() {
 //   console.log("hello");
@@ -90,7 +90,7 @@ let boolean = false;
 // console.log(obtenerInfoUsuario(547, "Profesor"));
 // console.log(obtenerInfoUsuario(548, "Enfermera"));
 
-// --------  Inheritance
+//////////  Inheritance
 
 // ejemplo = {
 //   variable: "texto1,texto2,texto3",
@@ -110,20 +110,20 @@ let boolean = false;
 // console.log(ejemplo4.join("xxxx"));
 // console.log(["a", "c"].join("xxxx"));
 
-// --------  Conditional statements
-let texto = "hola";
+//////////  Conditional statements
+// let texto = "hola";
 
-function holaOAddios(saludo) {
-  if (saludo === "Hola") {
-    return "Es un Hola";
-  } else if (saludo === "Adios") {
-    return "Es un Adios";
-  } else {
-    return "Ni hola ni Adios";
-  }
-}
+// function holaOAddios(saludo) {
+//   if (saludo === "Hola") {
+//     return "Es un Hola";
+//   } else if (saludo === "Adios") {
+//     return "Es un Adios";
+//   } else {
+//     return "Ni hola ni Adios";
+//   }
+// }
 
-console.log(holaOAddios(texto));
+// console.log(holaOAddios(texto));
 
 //----- Truthy/Falsey
 
@@ -139,17 +139,17 @@ console.log(holaOAddios(texto));
 
 // console.log(holaOAddios(10));
 
-//------ Loop Statement
+///////// Loop Statement
 
-function numeroDeUsuarios() {
-  let usuarios = ["byron", "leslie", "eddy"];
-  let conteo = 0;
+// function numeroDeUsuarios() {
+//   let usuarios = ["byron", "leslie", "eddy"];
+//   let conteo = 0;
 
-  for (let i = 0; i < usuarios.length; i++) {
-    conteo += 1;
-  }
+//   for (let i = 0; i < usuarios.length; i++) {
+//     conteo += 1;
+//   }
 
-  return conteo;
-}
+//   return conteo;
+// }
 
-console.log(numeroDeUsuarios());
+// console.log(numeroDeUsuarios());
